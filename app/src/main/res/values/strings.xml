@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidProjectsStructureDemo</string>
+    <string name="rs500">$500</string>
 </resources>

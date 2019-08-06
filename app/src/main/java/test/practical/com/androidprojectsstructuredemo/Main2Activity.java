@@ -15,8 +15,7 @@ import test.practical.com.androidprojectsstructuredemo.Utils.FileManagerUtill;
 import static test.practical.com.androidprojectsstructuredemo.Utils.CommonUtils.grantallpermission;
 
 
-public  class Main2Activity extends FileManagerUtill {
-
+public class Main2Activity extends FileManagerUtill {
 
 
     private final static String TAG = "APP";
@@ -34,8 +33,8 @@ public  class Main2Activity extends FileManagerUtill {
 
     @Override
     public Void OnImageChosanResponce(String Path, String Base64) {
-        Log.e("Path",Path);
-        Log.e("Base64",Base64);
+        Log.e("Path", Path);
+        Log.e("Base64", Base64);
         return null;
     }
 
@@ -46,11 +45,11 @@ public  class Main2Activity extends FileManagerUtill {
         Log.e(TAG, "*Mime type: " + file.getMimeType() + "\n\n");
         Log.e(TAG, "*File extn: " + file.getExtension() + "\n\n");
         Log.e(TAG, "*File size: " + file.getFileSize() / 1024 + "KB");
-        Log.e(TAG ,"*Base64"+Base64);
+        Log.e(TAG, "*Base64" + Base64);
         return null;
     }
 
-
+    //region
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +59,7 @@ public  class Main2Activity extends FileManagerUtill {
 
             @Override
             public void onClick(View v) {
-              takePicture();
+                takePicture();
             }
         });
         Button buttonChooseImage = (Button) findViewById(R.id.buttonChooseImage);
@@ -93,14 +92,10 @@ public  class Main2Activity extends FileManagerUtill {
         });
 
 
-
         imageViewThumbnail = (ImageView) findViewById(R.id.imageViewThumb);
         imageViewThumbSmall = (ImageView) findViewById(R.id.imageViewThumbSmall);
     }
-
-
-
-
+    //endregion
 
 
 }

@@ -2,7 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:fontFamily">@font/alcubierre</item>
+        <item name="android:fontFamily">@font/montserrat</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -38,5 +38,41 @@
 
     <style name="TimePickerTheme"  parent="Theme.MaterialComponents.Light.Dialog">
 
+    </style>
+
+
+    <style name="actionbar_menu">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:padding">@dimen/_2sdp</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+
+    <style name="actionbar_search">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="actionbar_back">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">@dimen/_24sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:rotation">180</item>
+        <item name="android:fontFamily">@font/montserrat</item>
     </style>
 </resources>
