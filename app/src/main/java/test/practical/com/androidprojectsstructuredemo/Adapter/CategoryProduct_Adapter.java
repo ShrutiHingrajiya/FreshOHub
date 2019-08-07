@@ -12,24 +12,24 @@ import androidx.recyclerview.widget.RecyclerView;
 import butterknife.ButterKnife;
 import test.practical.com.androidprojectsstructuredemo.R;
 
-public class TopDealsDashboard_Adapter extends RecyclerView.Adapter<TopDealsDashboard_Adapter.Myholder> {
+public class CategoryProduct_Adapter extends RecyclerView.Adapter<CategoryProduct_Adapter.Myholder> {
 
     Context c;
 
-    public TopDealsDashboard_Adapter(Activity c) {
+    public CategoryProduct_Adapter(Activity c) {
         this.c = c;
 
     }
 
     @NonNull
     @Override
-    public TopDealsDashboard_Adapter.Myholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = (View) LayoutInflater.from(parent.getContext()).inflate(R.layout.raw_top_deals_dashboard, parent, false);
-        return new Myholder(view);
+    public CategoryProduct_Adapter.Myholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = (View) LayoutInflater.from(parent.getContext()).inflate(R.layout.raw_category_product_dashboard, parent, false);
+        return new CategoryProduct_Adapter.Myholder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TopDealsDashboard_Adapter.Myholder holder, int position) {
+    public void onBindViewHolder(@NonNull CategoryProduct_Adapter.Myholder holder, int position) {
 
     }
 
@@ -38,7 +38,7 @@ public class TopDealsDashboard_Adapter extends RecyclerView.Adapter<TopDealsDash
         return 4;
     }
 
-    public class Myholder extends RecyclerView.ViewHolder{
+    public class Myholder extends RecyclerView.ViewHolder {
 
         public Myholder(@NonNull View itemView) {
             super(itemView);

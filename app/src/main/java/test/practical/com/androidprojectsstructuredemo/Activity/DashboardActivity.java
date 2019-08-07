@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import test.practical.com.androidprojectsstructuredemo.Adapter.CategoryDashboard_Adapter;
 import test.practical.com.androidprojectsstructuredemo.Adapter.TopDealsDashboard_Adapter;
 import test.practical.com.androidprojectsstructuredemo.R;
 
@@ -30,10 +31,11 @@ public class DashboardActivity extends AppCompatActivity {
     private void setMemoryAllocation() {
 
         TopDealsDashboard_Adapter adt = new TopDealsDashboard_Adapter(DashboardActivity.this);
-        rcvTopDealsDashboard.setLayoutManager(new LinearLayoutManager(DashboardActivity.this));
-
+        rcvTopDealsDashboard.setLayoutManager(new LinearLayoutManager(DashboardActivity.this, RecyclerView.HORIZONTAL, false));
         rcvTopDealsDashboard.setAdapter(adt);
 
-
+        CategoryDashboard_Adapter adt1 = new CategoryDashboard_Adapter(DashboardActivity.this, true);
+        rcvCategoryDashboard.setLayoutManager(new LinearLayoutManager(DashboardActivity.this, RecyclerView.HORIZONTAL, false));
+        rcvCategoryDashboard.setAdapter(adt1);
     }
 }
