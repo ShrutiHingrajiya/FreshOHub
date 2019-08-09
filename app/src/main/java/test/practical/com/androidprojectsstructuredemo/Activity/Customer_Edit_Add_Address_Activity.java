@@ -414,9 +414,6 @@ public class Customer_Edit_Add_Address_Activity extends AppCompatActivity implem
             strSelectedType = strSelectedType;
         }
 
-
-
-
     }
 
     private void callForNewAddress() {
@@ -458,19 +455,12 @@ public class Customer_Edit_Add_Address_Activity extends AppCompatActivity implem
 
 
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
+
                 return;
             }
 
             gMap.setMyLocationEnabled(true);
             gMap.getUiSettings().setMyLocationButtonEnabled(false);
-
 
             gMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentLat, currentLng), 13));
 
@@ -518,7 +508,6 @@ public class Customer_Edit_Add_Address_Activity extends AppCompatActivity implem
                     .target(new LatLng(currentLat, currentLng))
                     .zoom(19)
                     .build();
-
 
             gMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
         }
@@ -577,7 +566,7 @@ public class Customer_Edit_Add_Address_Activity extends AppCompatActivity implem
                     selectedFinalLng = midLatLng.longitude;
 
                     addresses = geocoder.getFromLocation(midLatLng.latitude, midLatLng.longitude, 1);
-                    String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
+                    String address = addresses.get(0).getAddressLine(0);
 
                     String city = addresses.get(0).getLocality();
                     String state = addresses.get(0).getAdminArea();
@@ -605,9 +594,6 @@ public class Customer_Edit_Add_Address_Activity extends AppCompatActivity implem
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-
-
-                // googleMap.addMarker(new MarkerOptions().position(midLatLng).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
             }
         });
