@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backgreen"
+    tools:context=".Activity.FreshOHub_ThankYouActivity">
+    <TextView
+        android:padding="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_24ssp"
+        android:text="@string/thank_you_for_order"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <TextView
+        android:padding="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_will_received_your_order_soon"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/round_rect_shape_white"
+        android:text="@string/continue_to_shopping"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -23,8 +23,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Activity.ProductWithCategoryActivity"></activity>
-        <activity android:name=".Activity.DashboardActivity">
+        <activity android:name=".Activity.FreshOHub_ThankYouActivity"></activity>
+        <activity android:name=".Activity.FreshOHub_CartActivity" />
+        <activity android:name=".Activity.ProductWithCategoryActivity" />
+        <activity android:name=".Activity.DashboardActivity" />
+        <activity android:name=".Activity.FreshOHub_SignupActivity" />
+        <activity android:name=".Activity.FreshOHub_LoginActivity" />
+        <activity android:name=".Activity.FreshOHub_SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

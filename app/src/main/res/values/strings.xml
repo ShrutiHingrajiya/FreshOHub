@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">AndroidProjectsStructureDemo</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="dont_t_have_an_account_sign_up">Dont\'t have an Account?Sign up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="have_an_account_sign_in">Have an Account?Sign In</string>
+    <string name="email">Email</string>
     <string name="rs500">$500</string>
+    <string name="fruit">Fruit</string>
+    <string name="apple">Apple</string>
+    <string name="_1">1</string>
+    <string name="you_will_received_your_order_soon">You Will Received Your Order Soon....!</string>
+    <string name="thank_you_for_order">Thank You For Order</string>
+    <string name="continue_to_shopping">Continue to Shopping</string>
 </resources>
