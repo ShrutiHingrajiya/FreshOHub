@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/mainFrame"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_drawer_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_drawer_icon"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/drawer"
+                    android:tint="@color/white"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:rotation="180"
+                    android:tint="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_action_title"
+                style="@style/style_actionbar_title"
+                android:text="Manage Addresses"
+                android:textAllCaps="true" />
+
+            <ImageView
+                android:id="@+id/imgAddAddress"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/icon_add"
+                android:tint="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:id="@+id/lnRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_4sdp">
+
+                <TextView
+                    android:id="@+id/savedAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Saved Addresses"
+                    android:textColor="@color/grey_600"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSavedAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnBottomMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lnRecycler"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:id="@+id/lnAddNewAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rectangle_save_address"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="ADD NEW ADDRESS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_8ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llnodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:text="Oops"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_38ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_nodataimage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:text="Your Requested page does not exist"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

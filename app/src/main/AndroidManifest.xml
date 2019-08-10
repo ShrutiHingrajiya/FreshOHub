@@ -43,6 +43,8 @@
 
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.Customer_Edit_Add_Address_Activity" />
+        <activity android:name=".Activity.Customer_Saved_Address_Activity" />
     </application>
 
 </manifest>
